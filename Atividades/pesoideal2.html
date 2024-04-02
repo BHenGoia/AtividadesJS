@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+</head>
+<body>
+
+    <script>
+        let sexo = String(window.prompt('informe seu sexo m/f: ')).toLowerCase();
+        let a = Number(window.prompt('informe sua altura em mts: '));
+
+        if (sexo === 'm'){
+            let resp = (72.7*a)-58;
+            window.alert (`Seu peso ideal é: ${resp.toFixed(2)} Kg`);  
+        }
+        else if (sexo === 'f'){
+            let resp2 = (62.1*a) - 44.7;
+            window.alert (`Seu peso ideal é: ${resp2.toFixed(2)} Kg`);  
+        }
+
+
+    </script>
+    
+</body>
+</html>

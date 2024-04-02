@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario vendedor</title>
+</head>
+<body>
+    <script>
+
+        let nome = String(window.prompt('Escreva seu nome: '));
+        let salario = Number(window.prompt('Escreva seu salário: '));
+        let vendas = Number(window.prompt('Escreva suas vendas do mês: '));
+        let sf = Number(salario + (vendas*0.15).toFixed(2));
+
+        window.alert(`Olá ${nome}, seu salário é de ${salario}R$, você vendeu ${vendas}R$, portanto a somatória do seu salário com sua comissão é de: ${sf}R$`)
+    </script>
+    
+</body>
+</html>

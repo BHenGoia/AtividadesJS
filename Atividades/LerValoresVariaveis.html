@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substituir variáveis</title>
+</head>
+<body>
+    <script>
+
+        let valor1 = Number(window.prompt('informe um numero: '));
+        let valor2 = Number(window.prompt('informe outro número: '));
+        let valoraux = valor1
+
+        valor1 = valor2
+        valor2 = valoraux
+
+        window.prompt(`O valor da primeira variável é ${valor1}, originalmente era ${valoraux} e a segunda variavel é ${valor2}, originalmente era ${valor1} `);
+
+    </script>
+</body>
+</html>
